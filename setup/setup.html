@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>MAKERPAPA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="shortcut icon" href="../flat-ui/images/favicon.ico">
+        <link rel="stylesheet" href="../flat-ui/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../flat-ui/css/flat-ui.css">
+        <!-- Using only with Flat-UI (free)-->
+        <link rel="stylesheet" href="../common-files/css/icon-font.css">
+        <!-- main styles -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+
+    <body>
+        <!-- header-10 -->
+        <header class="header-10">
+                <div class="container"> 
+                    <div class="navbar col-sm-12 navbar-fixed-top" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle"></button>
+                            <a class="brand" href="#"> MAKERPAPA</a>
+
+                        </div>
+                        <div class="navbar-collapse collapse container-fluid">
+                            <ul class="nav pull-right">
+                                <li><a href="../index/index.html">主页</a></li>
+                                <li><a href="../howto_main/howto_main.html">How-to</a></li>
+                                <li><a href="../sharing_main/sharing_main.html">分享会</a></li>
+                                <li><a href="../activity/activity.html">线下活动</a></li>   
+                                <li class="hidden-phone user_menu hidden-tablet hidden-phone">
+                                  <div class="nb_boxes ">
+                                    <a data-toggle="modal" data-backdrop="static" href="#myMail"><b>Message</b><span class="navbar-unread">1</span></a>
+                                  </div>
+                                </li>
+                                <form class="navbar-form pull-left ">  
+                                  <img class="btn btn-primary dropdown-toggle  " data-toggle="dropdown" src="img/makerpapa_logo_head.png" width="80" height="80" alt=""><span class="caret"></span>
+                                    <span class="dropdown-arrow dropdown-arrow-inverse "></span>
+                                      <ul class="dropdown-menu dropdown-inverse dropdown-menu-right">
+                                        <li><a href="../user/user.html">个人主页</a></li>
+                                        <li><a href="#">账号设置</a></li>
+                                        <li><a href="../index/index.html">退出</a></li>
+                                      </ul>
+                                </form>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            <div class="header-background"></div>  
+        </header>
+      
+        <!--消息-->
+        <div class="modal fade" id="myMail">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" data-dismiss="modal">×</button>
+                      <h3>新的消息</h3>
+                    </div>
+                    <div class="modal-body">
+                      <div class="alert alert-info">In this table jquery plugin turns a table row into a clickable link.</div>
+                      <table class="table table-condensed table-striped" data-rowlink="a">
+                        <thead>
+                          <tr>
+                            <th>Sender</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                            <th>Size</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Declan Pamphlett</td>
+                            <td><a href="javascript:void(0)">Lorem ipsum dolor sit amet</a></td>
+                            <td>23/05/2012</td>
+                            <td>25KB</td>
+                          </tr>
+                          <tr>
+                            <td>Erin Church</td>
+                            <td><a href="javascript:void(0)">Lorem ipsum dolor sit amet</a></td>
+                            <td>24/05/2012</td>
+                            <td>15KB</td>
+                          </tr>
+                          <tr>
+                            <td>Koby Auld</td>
+                            <td><a href="javascript:void(0)">Lorem ipsum dolor sit amet</a></td>
+                            <td>25/05/2012</td>
+                            <td>28KB</td>
+                          </tr>
+                          <tr>
+                            <td>Anthony Pound</td>
+                            <td><a href="javascript:void(0)">Lorem ipsum dolor sit amet</a></td>
+                            <td>25/05/2012</td>
+                            <td>33KB</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="javascript:void(0)" class="btn">去邮箱查收</a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+      <div class="page-wrapper">
+        <!-- Content Start -->
+        <div class="inner">
+            <div class="row">
+              <!-- left Box Start -->
+              <div class="col-sm-8" style="margin-top:50px;">      
+               <!-- 个人设置 -->
+                  <div class="row">
+                        <div class="col-sm-12  ">
+                          <form>
+                            <ul>
+                                <div class="row">
+                                  <div class="col-sm-3" style="text-align:right"><h6>更改头像:</h6></div>
+                                  
+                                  <!--添加图片-->                     
+                                  <div class="upload-box col-sm-4">
+                                    <div class="upload-widget form-control" data-upload-url="/action/upload_pic/" data-kind="1001" data-width="160" data-xf="jz-gQ" data-default-image="" style="height: 180px;">
+                                        <div class="upload">
+                                          <span class="upload-text">
+                                            <span class="main-title">点击上传头像</span><br>
+                                          </span>
+                                        </div>
+                                        <input name="ident" class="hidden ng-valid ng-dirty" ng-model="recipe.ident">
+                                        <input name="picurl" class="hidden ng-valid ng-dirty" ng-model="recipe.picurl">
+                                          <div class="upload-widget-autogen">
+                                            <input type="file" name="file" class="upload-widget-file" tabindex="-1">
+
+                                            <div class="upload-widget-progress" style="display: none;">
+                                              <div class="upload-widget-stop">
+                                              </div>
+                                              <div class="upload-widget-progress-text">
+                                                <span>上传中•••</span>
+                                              </div>
+                                              <img src="" class="upload-widget-preview">
+                                            </div>
+                                          </div>
+                                    </div>
+                                  </div>
+                                  <!--添加图片完-->
+                                </div>
+                            </ul>
+
+                            <ul>
+                                <div class="row">
+                                  <div class="col-sm-3" style="text-align:right"><h6>昵称:</h6></div>
+                                  <div class="col-sm-4"><input type="text" class="form-control " /></div>
+                                </div>
+                            </ul>
+                            <ul>
+                                <div class="row">
+                                  <div class="col-sm-3" style="text-align:right"><h6>个人简介:</h6></div>
+                                  
+                                  <div class="col-sm-6"><textarea rows="7" class="form-control"></textarea></div>
+                                </div>
+                            </ul>
+                            <ul>
+                                <div class="row">
+                                  <div class="col-sm-3" style="text-align:right"><h6>性别:</h6></div>
+                                  <div class="col-sm-1">
+                                      <label class="radio checked">
+                                        <span class="icons"><span class="first-icon fui-radio-unchecked"></span>
+                                        <span class="second-icon fui-radio-checked"></span></span>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                          男
+                                      </label>
+                                  </div>
+                                  <div class="col-sm-1">
+                                      <label class="radio">
+                                        <span class="icons"><span class="first-icon fui-radio-unchecked"></span>
+                                        <span class="second-icon fui-radio-checked"></span></span>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                        女
+                                      </label>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <label class="radio">
+                                        <span class="icons"><span class="first-icon fui-radio-unchecked"></span>
+                                        <span class="second-icon fui-radio-checked"></span></span>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                        其他
+                                      </label>
+                                  </div>
+
+                                </div>
+                              
+                                <div class="row">
+                                  <div class="col-sm-3" style="text-align:right"><h6>生日:</h6></div>
+                                    <div class="col-sm-2">
+                                      <select name="year">
+                                            <option value="">请选择</option>
+                                            <option value="1950">1950</option>
+                                            <option value="1951">1951</option>
+                                            <option value="1952">1952</option>
+                                            <option value="1953">1953</option>
+                                            <option value="1954">1954</option>
+                                            <option value="1955">1955</option>
+                                            <option value="1956">1956</option>
+                                            <option value="1957">1957</option>
+                                            <option value="1958">1958</option>
+                                            <option value="1959">1959</option>
+                                            <option value="1960">1960</option>
+                                            <option value="1961">1961</option>
+                                            <option value="1962">1962</option>
+                                            <option value="1963">1963</option>
+                                            <option value="1964">1964</option>
+                                            <option value="1965">1965</option>
+                                            <option value="1966">1966</option>
+                                            <option value="1967">1967</option>
+                                            <option value="1968">1968</option>
+                                            <option value="1969">1969</option>
+                                            <option value="1970">1970</option>
+                                            <option value="1971">1971</option>
+                                            <option value="1972">1972</option>
+                                            <option value="1973">1973</option>
+                                            <option value="1974">1974</option>
+                                            <option value="1975">1975</option>
+                                            <option value="1976">1976</option>
+                                            <option value="1977">1977</option>
+                                            <option value="1978">1978</option>
+                                            <option value="1979">1979</option>
+                                            <option value="1980">1980</option>
+                                            <option value="1981">1981</option>
+                                            <option value="1982">1982</option>
+                                            <option value="1983">1983</option>
+                                            <option value="1984">1984</option>
+                                            <option value="1985">1985</option>
+                                            <option value="1986">1986</option>
+                                            <option value="1987">1987</option>
+                                            <option value="1988">1988</option>
+                                            <option value="1989">1989</option>
+                                            <option value="1990" selected="&quot;selected&quot;">1990</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1992">1992</option>
+                                            <option value="1993">1993</option>
+                                            <option value="1994">1994</option>
+                                            <option value="1995">1995</option>
+                                            <option value="1996">1996</option>
+                                            <option value="1997">1997</option>
+                                            <option value="1998">1998</option>
+                                            <option value="1999">1999</option>
+                                            <option value="2000">2000</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2004">2004</option>
+                                            <option value="2005">2005</option>
+                                            <option value="2006">2006</option>
+                                            <option value="2007">2007</option>
+                                            <option value="2008">2008</option>
+                                            <option value="2009">2009</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2011">2011</option>
+                                        </select>
+                                
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <select name="month" id="month" onchange="m(this.id,this.value);">
+                                            <option value="">请选择</option>
+                                            <option value="1" selected="&quot;selected&quot;">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <select id="day" name="day">
+                                            <option value="">请选择</option>
+                                            <option value="1" selected="&quot;selected&quot;">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                    </div>
+                                </div>
+                              
+                              
+                                <div class="row">
+                                  <div class="col-sm-3" style="text-align:right"><h6>家乡:</h6></div>
+                                  <div class="col-sm-2">
+                                    <select name="home_province" id="hp" onchange="c(this.id,this.value);">
+                                        <option value="">请选择</option>
+                                        
+                                        <option value="1" selected="&quot;selected&quot;">北京</option>
+                                        
+                                        <option value="2">天津</option>
+                                        
+                                        <option value="3">河北</option>
+                                        
+                                        <option value="4">山西</option>
+                                        
+                                        <option value="5">内蒙</option>
+                                        
+                                        <option value="6">辽宁</option>
+                                        
+                                        <option value="7">吉林</option>
+                                        
+                                        <option value="8">黑龙江</option>
+                                        
+                                        <option value="9">上海</option>
+                                        
+                                        <option value="10">江苏</option>
+                                        
+                                        <option value="11">浙江</option>
+                                        
+                                        <option value="12">安徽</option>
+                                        
+                                        <option value="13">福建</option>
+                                        
+                                        <option value="14">江西</option>
+                                        
+                                        <option value="15">山东</option>
+                                        
+                                        <option value="16">河南</option>
+                                        
+                                        <option value="17">湖北</option>
+                                        
+                                        <option value="18">湖南</option>
+                                        
+                                        <option value="19">广东</option>
+                                        
+                                        <option value="20">广西</option>
+                                        
+                                        <option value="21">海南</option>
+                                        
+                                        <option value="22">重庆</option>
+                                        
+                                        <option value="23">四川</option>
+                                        
+                                        <option value="24">贵州</option>
+                                        
+                                        <option value="25">云南</option>
+                                        
+                                        <option value="26">西藏</option>
+                                        
+                                        <option value="27">陕西</option>
+                                        
+                                        <option value="28">甘肃</option>
+                                        
+                                        <option value="29">青海</option>
+                                        
+                                        <option value="30">宁夏</option>
+                                        
+                                        <option value="31">新疆</option>
+                                        
+                                        <option value="32">香港</option>
+                                        
+                                        <option value="33">澳门</option>
+                                        
+                                        <option value="34">台湾</option>
+                                        
+                                        <option value="35">海外</option>
+                                    </select>
+                                  </div>
+                                  
+                                </div>
+                              
+                              
+                                <div class="row">
+                                  <div class="col-sm-3" style="text-align:right"><h6>现居:</h6></div>
+                                  <div class="col-sm-2">
+                                    <select name="current_province" id="np" onchange="c(this.id,this.value);">
+                                        <option value="">请选择</option>
+                                        
+                                        <option value="1" selected="&quot;selected&quot;">北京</option>
+                                        
+                                        <option value="2">天津</option>
+                                        
+                                        <option value="3">河北</option>
+                                        
+                                        <option value="4">山西</option>
+                                        
+                                        <option value="5">内蒙</option>
+                                        
+                                        <option value="6">辽宁</option>
+                                        
+                                        <option value="7">吉林</option>
+                                        
+                                        <option value="8">黑龙江</option>
+                                        
+                                        <option value="9">上海</option>
+                                        
+                                        <option value="10">江苏</option>
+                                        
+                                        <option value="11">浙江</option>
+                                        
+                                        <option value="12">安徽</option>
+                                        
+                                        <option value="13">福建</option>
+                                        
+                                        <option value="14">江西</option>
+                                        
+                                        <option value="15">山东</option>
+                                        
+                                        <option value="16">河南</option>
+                                        
+                                        <option value="17">湖北</option>
+                                        
+                                        <option value="18">湖南</option>
+                                        
+                                        <option value="19">广东</option>
+                                        
+                                        <option value="20">广西</option>
+                                        
+                                        <option value="21">海南</option>
+                                        
+                                        <option value="22">重庆</option>
+                                        
+                                        <option value="23">四川</option>
+                                        
+                                        <option value="24">贵州</option>
+                                        
+                                        <option value="25">云南</option>
+                                        
+                                        <option value="26">西藏</option>
+                                        
+                                        <option value="27">陕西</option>
+                                        
+                                        <option value="28">甘肃</option>
+                                        
+                                        <option value="29">青海</option>
+                                        
+                                        <option value="30">宁夏</option>
+                                        
+                                        <option value="31">新疆</option>
+                                        
+                                        <option value="32">香港</option>
+                                        
+                                        <option value="33">澳门</option>
+                                        
+                                        <option value="34">台湾</option>
+                                        
+                                        <option value="35">海外</option>
+                                    </select>
+                                  </div>
+                                  
+
+                                </div>
+                              
+                              
+                                <div class="row">
+                                  <div class="col-sm-3" style="text-align:right"><h6>职业:</h6></div>
+                                  <div class="col-sm-2">
+                                    <select name="profession" id="jobs" onchange="w(this.id,this.value);">
+                                          <option value="">请选择</option>
+                                          <option value="学生">学生</option>
+                                          <option value="政府职员">政府职员</option>
+                                          <option value="教师">教师</option>
+                                          <option value="医生">医生</option>
+                                          <option value="营养师">营养师</option>
+                                          <option value="摄影师">摄影师</option>
+                                          <option value="职业厨师">职业厨师</option>
+                                          <option value="律师">律师</option>
+                                          <option value="会计">会计</option>
+                                          <option value="翻译">翻译</option>
+                                          <option value="编辑">编辑</option>
+                                          <option value="音乐人">音乐人</option>
+                                          <option value="演艺人">演艺人</option>
+                                          <option value="广告人">广告人</option>
+                                          <option value="公司文员">公司文员</option>
+                                          <option value="IT/互联网" selected="&quot;selected&quot;">IT/互联网</option>
+                                          <option value="个体商人">个体商人</option>
+                                          <option value="全职主妇">全职主妇</option>
+                                          <option value="其他">其他</option>
+                                      </select>
+                                  </div>
+                                </div>
+                            </ul>
+
+                            <ul>
+                                <div class="row col-sm-9">
+                                  <button type="submit" class="btn btn-primary btn-lg pull-right">
+                                    <span class="glyphicon glyphicon-envelope"></span> 提交
+                                  </button>
+                                </div>
+                            </ul>
+                          </form>
+                          
+                        </div>
+                  </div>       
+              </div>
+              <!-- right Box Start -->
+              <div class="col-sm-4">
+                    <!--活动推送-->
+                    <section class="post">
+                        <h6>我们的最新活动</h6>
+                        <div>
+                            <div class="description">
+                                <div class="description-box">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <dl class="palette palette-sun-flower img-rounded">
+                                                <a href="http://www.huodongxing.com/">JUN.<br>19th</a>
+                                            </dl>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <p>活动名称<br>Workshop</p>
+                                            <span class="glyphicon glyphicon-time"></span> 时间<br>
+                                            <span class="glyphicon glyphicon-map-marker"></span> 地点
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description-box">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <dl class="palette palette-sun-flower img-rounded">
+                                                <a href="http://www.huodongxing.com/">JUN.<br>19th</a>
+                                            </dl>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <p>活动名称<br>Sharing</p>
+                                            <span class="glyphicon glyphicon-time"></span> 时间<br>
+                                            <span class="glyphicon glyphicon-map-marker"></span> 地点
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description-box">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <dl class="palette palette-sun-flower img-rounded">
+                                                <a href="http://www.huodongxing.com/">JUN.<br>19th</a>
+                                            </dl>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <p>活动名称<br>Hackathon</p>
+                                            <span class="glyphicon glyphicon-time"></span> 时间<br>
+                                            <span class="glyphicon glyphicon-map-marker"></span> 地点
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--二维码-->
+                    <section class="qr">
+                        <h6>关注我们</h6>
+                        <img class="img-rounded" src="../common-files/img/qr.jpg">
+                    </section>
+
+                    <!--获得newletter-->
+                    <section class="newsletter">
+                        <h6>获取我们的最新消息</h6>
+                        <div class="input-group">
+                            <input type="text" name="email" value="" class="form-control" placeholder="@" id="mail">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn"><span class="fui-mail"></span></button>
+                            </span>
+                        </div>
+                    </section>
+              </div>
+            </div>
+        </div>
+       
+        <!--footer-1-->
+        <section class="footer-1 bg-midnight-blue">
+          <footer class="footer-1">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <address>
+                    <strong><h4>联系我们</h4></strong><br>
+                    <abbr title="Phone">Phone:</abbr> 13426371080／15011506331<br>
+                    <abbr title="Phone">E-mail:</abbr> makerpapa@163.com<br> 
+                    <abbr title="Phone">Wechat:</abbr> Makerpapa<br>
+                    北京市 海淀区 中关村创业大街 亿景大厦5层<br>
+                  </address>
+                  <div class="map">
+                    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1528.5731220208713!2d116.30663930015899!3d39.98283704560346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d239c885139eb4c!2z54ix5Zac5ZKW5ZWh!5e0!3m2!1sen!2sus!4v1406634902857" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <form>
+                    <label class="h6">名号</label>
+                    <input type="text" class="form-control">
+                    <label class="h6">邮箱</label>
+                    <input type="text" class="form-control">
+                    <label class="h6">想告诉我们的话</label>
+                    <textarea rows="7" class="form-control"></textarea>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                      <span class="glyphicon glyphicon-envelope"></span> 提交
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </section>
+      </div>
+
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../common-files/js/jquery-1.10.2.min.js"></script>
+        <script src="../flat-ui/js/bootstrap.min.js"></script>
+        <script src="../common-files/js/modernizr.custom.js"></script>
+        <script src="../common-files/js/page-transitions.js"></script>
+        <script src="../common-files/js/easing.min.js"></script>
+        <script src="../common-files/js/jquery.svg.js"></script>
+        <script src="../common-files/js/jquery.svganim.js"></script>
+        <script src="../common-files/js/startup-kit.js"></script>
+        <script src="../common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+        <script src="../common-files/js/jquery.parallax.min.js"></script>
+        <script src="../flat-ui/js/flatui-checkbox.js"></script>
+        <script src="../flat-ui/js/flatui-radio.js"></script>       
+        <!-- Placed at the end of the document so the pages load faster -->
+  
+    </body>
+</html>
