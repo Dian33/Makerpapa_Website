@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<title>MAKERPAPA</title>
+	    <meta charset="utf-8">
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link rel="stylesheet" href="../flat-ui/bootstrap/css/bootstrap.css">
+	    <link rel="stylesheet" href="../flat-ui/css/flat-ui.css">
+	    <!-- Using only with Flat-UI (free)-->
+	    <link rel="stylesheet" href="../common-files/css/icon-font.css">
+	    <!-- end -->
+	    <link rel="stylesheet" href="../common-files/css/animations.css">
+	    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!-- header-big-log_In-->
+	    <div class="header-big-log_In">
+			<div class="page-wrapper">
+
+		        <!-- header-1 -->
+		        <header class="header-1">
+		            <div class="container">
+		                <div class="row">
+		                    <div class="navbar col-sm-12 navbar-fixed-top" role="navigation">
+		                        <div class="navbar-header">
+		                            <button type="button" class="navbar-toggle"></button>
+		                            <a class="brand" href="#">MAKERPAPA</a>
+		                        </div>
+		                        <div class="navbar-collapse collapse pull-right">
+		                            <ul class="nav pull-left">
+		                                <li><a href="../index/index.html">主页</a></li>
+		                                <li><a href="../howto_main/howto_main.html">How-to</a></li>
+		                                <li><a href="">分享会</a></li>
+		                                <li class="active"><a href="../activity_main/activity_main.html">线下活动</a></li>
+		                            </ul>
+		                            <form class="navbar-form pull-left">
+		                                <a class="btn btn-primary navbar-btn" href="#" data-toggle="modal" data-target="#log_in">Log In</a>
+		                            </form>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </header>
+		        <!-- header-1 End-->
+
+		        <!-- header-1-sub-->
+		        <div class="header-1-sub">
+		            <div id="pt-main" class="page-transitions pt-perspective">
+		                <div class="pt-page pt-page-1 bg-midnight-blue">
+		                    <div class="background">
+		                        &nbsp;
+		                    </div>
+		                    <div class="caption">
+		                        <div class="container">
+		                            <h3>HOW-TO</h3>
+		                            <p class="lead">
+		                                 老爹教你动手学习 爱上制作！
+		                            </p>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="pt-page pt-page-2 bg-midnight-blue">
+		                    <div class="background">
+		                        &nbsp;
+		                    </div>
+		                    <div class="caption">
+		                        <div class="container">
+		                            <h3>本月主题</h3>
+		                            <p class="lead">
+		                                邀请朋友来家里玩儿密室逃脱吧！
+		                            </p>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="pt-page pt-page-3 bg-midnight-blue">
+		                    <div class="background">
+		                        &nbsp;
+		                    </div>
+		                    <div class="caption">
+		                        <div class="container">
+		                            <h3>项目名称</h3>
+		                            <p class="lead">
+		                                by 上传人昵称
+		                            </p>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="container controls">
+		                    <a class="control-prev" href="#"><span class="fui-arrow-left"> </span></a>
+		                    <a class="control-next" href="#"><span class="fui-arrow-right"> </span></a>
+		                </div>
+		            </div>
+		        </div>
+		        <!-- header-1-sub End-->
+
+		    </div>
+
+		    <!-- log in -->
+			<div class="modal fade" id="log_in" tabindex="-1" role="dialog" aria-labelledby="log_in_Label" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<h4 class="modal-title" id="sign_in_Label">Please log in</h4>
+						</div>
+						<div class="modal-body login-form">
+							<div class="form-group">
+								<input type="text" name="email" value="" class="form-control login-field" placeholder="请输入你的E-mail" id="email">
+							</div>
+							<div class="form-group">
+								<input type="password" name="密码" value="" class="form-control login-field" placeholder="请输入你的密码" id="pass">
+							</div>
+						</div>
+						<div class="modal-footer">
+							<u><small type="button" align="bottom" data-toggle="modal" data-target="#sign_up"> 没有账户</small></u>
+							<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+							<button type="button" class="btn btn-primary">登陆</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- log in End-->
+			
+			<!-- sign up -->
+			<div class="modal fade" id="sign_up" tabindex="-1" role="dialog" aria-labelledby="sign_in_Label" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<h4 class="modal-title" id="sign_in_Label">Please sign up</h4>
+						</div>
+						<div class="modal-body login-form">
+							<div class="form-group">
+								<input type="text" name="email" value="" class="form-control login-field" placeholder="你的昵称" id="name">
+							</div>
+							<div class="form-group">
+								<input type="text" name="email" value="" class="form-control login-field" placeholder="你的E-mail" id="email">
+							</div>
+							<div class="form-group">
+								<input type="password" name="密码" value="" class="form-control login-field" placeholder="请输入你的密码" id="pass">
+							</div>
+							<div class="form-group">
+								<input type="password" name="密码" value="" class="form-control login-field" placeholder="请再次输入你的密码" id="pass2">
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+							<button type="button" class="btn btn-primary" href="#">注册</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<!-- sign up End-->
+
+		</div>
+		<!-- header-big-log_In End-->
+
+	    <div class="page-wrapper">
+		    <!--Content-Activity_main-->
+		    <div class="Content-Activity_main">
+
+				<!-- content-2 -->
+				<div class="content-2">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>"老爹"</b>目前每周三都会在中关村举办免费的分享会，为制造者提供跨领域的交流平台。也会不定期举办特定主题的大型活动。我们希望通过这些和制作、创造相关的活动，让更多人愿意开始动手学习！将制造的乐趣传递出去.</h6>
+								<button class="btn btn-primary" data-toggle="modal" data-target="#join_in" href="#"><span class="glyphicon glyphicon-user"></span> 活动导师申请</button>
+							</div>
+							<div class="col-sm-6">
+								<!--Calendar-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- content-2 End-->
+
+				<!-- 新活动列表 -->
+				<div class="coming-list">
+					<div class="container">
+						<h4 style="margin-bottom:30px;">报名中 | Upcoming</h4>	
+						<div class="members">
+							<div class="member">
+								<div class="photo-wrapper">
+			                        <div class="photo"><img src="../common-files/img/papa/1.png" alt="" style="display: none;"></div>
+			                        <div class="overlay">
+			                            <a href="#"><span class="fui-check"></span></a>
+			                        </div>
+	                    		</div>
+	                    		<div class="info">
+	                    			<p class="name">创客入门工作坊</p>
+	                    			<p><b>时间/地点：</b>2014.8.4/硬创邦</p>
+	                    			<hr>
+	                    			<p><b>分享会｜Sharing</b></p>
+	                    		</div>
+	                    	</div>
+							<div class="member">
+								<div class="photo-wrapper">
+			                        <div class="photo"><img src="../common-files/img/papa/1.png" alt="" style="display: none;"></div>
+			                        <div class="overlay">
+			                            <a href="#"><span class="fui-check"></span></a>
+			                        </div>
+	                    		</div>
+	                    		<div class="info">
+	                    			<p class="name">创客入门工作坊</p>
+	                    			<p><b>时间/地点：</b>2014.8.4/硬创邦</p>
+	                    			<hr>
+	                    			<p><b>分享会｜Sharing</b></p>
+	                    		</div>
+	                    	</div>
+							<div class="member">
+								<div class="photo-wrapper">
+			                        <div class="photo"><img src="../common-files/img/papa/1.png" alt="" style="display: none;"></div>
+			                        <div class="overlay">
+			                            <a href="#"><span class="fui-check"></span></a>
+			                        </div>
+	                    		</div>
+	                    		<div class="info">
+	                    			<p class="name">创客入门工作坊</p>
+	                    			<p><b>时间/地点：</b>2014.8.4/硬创邦</p>
+	                    			<hr>
+	                    			<p><b>分享会｜Sharing</b></p>
+	                    		</div>
+	                    	</div>
+							<div class="member">
+								<div class="photo-wrapper">
+			                        <div class="photo"><img src="../common-files/img/papa/1.png" alt="" style="display: none;"></div>
+			                        <div class="overlay">
+			                            <a href="#"><span class="fui-check"></span></a>
+			                        </div>
+	                    		</div>
+	                    		<div class="info">
+	                    			<p class="name">创客入门工作坊</p>
+	                    			<p><b>时间/地点：</b>2014.8.4/硬创邦</p>
+	                    			<hr>
+	                    			<p><b>分享会｜Sharing</b></p>
+	                    		</div>
+	                    	</div>                    	                    	                                        	
+	                    </div>
+					</div>
+				</div>
+				<!-- 新活动列表完-->
+
+				<!-- 旧活动列表 -->
+				<div class="past-list">
+					<div class="container">
+						<h4 style="margin-bottom:30px;">过往 | Past</h4>	
+						<div class="members">
+							<div class="member">
+								<div class="photo-wrapper">
+			                        <div class="photo"><img src="../common-files/img/papa/1.png" alt="" style="display: none;"></div>
+			                        <div class="overlay">
+			                            <a href="#"><span class="fui-check"></span></a>
+			                        </div>
+	                    		</div>
+	                    	</div>
+							<div class="member">
+								<div class="photo-wrapper">
+			                        <div class="photo"><img src="../common-files/img/papa/1.png" alt="" style="display: none;"></div>
+			                        <div class="overlay">
+			                            <a href="#"><span class="fui-check"></span></a>
+			                        </div>
+	                    		</div>
+	                    	</div>
+							<div class="member">
+								<div class="photo-wrapper">
+			                        <div class="photo"><img src="../common-files/img/papa/1.png" alt="" style="display: none;"></div>
+			                        <div class="overlay">
+			                            <a href="#"><span class="fui-check"></span></a>
+			                        </div>
+	                    		</div>
+	                    	</div>
+							<div class="member">
+								<div class="photo-wrapper">
+			                        <div class="photo"><img src="../common-files/img/papa/1.png" alt="" style="display: none;"></div>
+			                        <div class="overlay">
+			                            <a href="#"><span class="fui-check"></span></a>
+			                        </div>
+	                    		</div>
+	                    	</div>  
+							<div class="member">
+								<div class="photo-wrapper">
+			                        <div class="photo"><img src="../common-files/img/papa/1.png" alt="" style="display: none;"></div>
+			                        <div class="overlay">
+			                            <a href="#"><span class="fui-check"></span></a>
+			                        </div>
+	                    		</div>
+	                    	</div> 
+							<div class="member">
+								<div class="photo-wrapper">
+			                        <div class="photo"><img src="../common-files/img/papa/1.png" alt="" style="display: none;"></div>
+			                        <div class="overlay">
+			                            <a href="#"><span class="fui-check"></span></a>
+			                        </div>
+	                    		</div>
+	                    	</div>                  	                    	                                        	
+	                    </div>
+					</div>
+				</div>
+				<!-- 旧活动列表完 -->
+
+				<!--3种活动的介绍-->
+				<!--project-3-->
+	            <div class="projects-3">
+	                <div class="container">
+	                    <h3>老爹带你在活动中体会制作的乐趣</h3>
+	                    <div class="projects">
+	                        <div class="project-wrapper">
+	                            <div class="project">
+	                                <div class="photo-wrapper">
+	                                    <div class="photo"><img src="../common-files/img/activity/workshop.jpg" alt="" style="display: none;"></div>
+	                                    <div class="overlay">
+						                   <span class="fui-eye"> </span>
+						                 </div>
+	                                </div>
+	                            </div>
+	                            <div class="info">
+		                            <h6>工作坊 Workshop</h6>
+		                            <p>别样的传授知识的平台,我们把创客们的各种好玩有趣的项目,发成可以动手的活动。参与者们通过亲自的实践,在制造中学习相关的知识,创造的技能,认识有意思的朋友。</p>
+	                            </div>
+	                        </div>
+	                        <div class="project-wrapper">
+	                            <div class="project">
+	                                <div class="photo-wrapper">
+	                                    <div class="photo"><img src="../common-files/img/activity/talk.jpg" alt="" style="display: none;"></div>
+	                                    <div class="overlay">
+						                   <span class="fui-eye"> </span>
+						                 </div>
+	                                </div>
+	                            </div>
+	                            <div class="info">
+		                            <h6>分享会 Sharing</h6>
+		                            <p>由“资深创客”们带来的演讲。从无人机、机器人到首饰制作、太阳能系统，你能想到的关于制造的一切，这里都有！除了每周三进行的以外，我们还会不定期地举办大型主题分享活动。</p>
+	                            </div>
+	                        </div>
+	                        <div class="project-wrapper">
+	                            <div class="project">
+	                                <div class="photo-wrapper">
+	                                    <div class="photo"><img src="../common-files/img/activity/hackathon.jpg" alt="" style="display: none;"></div>
+	                                    <div class="overlay">
+						                   <span class="fui-eye"> </span>
+						                 </div>
+	                                </div>
+	                            </div>
+	                            <div class="info">
+				                    <h6>马拉松 Hackathon</h6>
+				                  <p>限定时间内的创造大比拼。针对不同的主题、运用多样的材料，和来自不同领域的朋友一起将想法变为现实。我们希望可已通过这样的活动促进学科之间的交流、给你快速学习的氛围。</p>
+				                </div>
+	                        </div>
+	                    </div>
+	                </div><!--/.container-->
+	            </div>
+	            <!--3种活动的介绍完-->
+
+	        </div>
+		    <!--Content-Activity_main End-->
+
+			<!--footer-->
+	        <div class="footer-1 bg-midnight-blue">
+	          <footer class="footer-1">
+	            <div class="container">
+	              <div class="row">
+	                <div class="col-sm-6">
+	                  <address>
+	                    <strong><h4>联系我们</h4></strong><br>
+	                    <abbr title="Phone">Phone:</abbr> 13426371080／15011506331<br>
+	                    <abbr title="Phone">E-mail:</abbr> makerpapa@163.com<br> 
+	                    <abbr title="Phone">Wechat:</abbr> Makerpapa<br>
+	                    北京市 海淀区 中关村创业大街 亿景大厦5层<br>
+	                  </address>
+	                  <div class="map">
+	                    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1528.5731220208713!2d116.30663930015899!3d39.98283704560346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d239c885139eb4c!2z54ix5Zac5ZKW5ZWh!5e0!3m2!1sen!2sus!4v1406634902857" width="600" height="450" frameborder="0" style="border:0"></iframe>
+	                  </div>
+	                </div>
+
+	                <div class="col-sm-6">
+	                  <form>
+	                    <label class="h6">名号</label>
+	                    <input type="text" class="form-control">
+	                    <label class="h6">邮箱</label>
+	                    <input type="text" class="form-control">
+	                    <label class="h6">想告诉我们的话</label>
+	                    <textarea rows="7" class="form-control"></textarea>
+	                    <button type="submit" class="btn btn-primary btn-lg">
+	                      <span class="glyphicon glyphicon-envelope"></span> 提交
+	                    </button>
+	                  </form>
+	                </div>
+	              </div>
+	            </div>
+	          </footer>
+	        </div>
+	        <!--footer end-->
+    	</div><!--page-wrapper-->
+
+    		<!-- join in -->
+			<div class="modal fade" id="join_in" tabindex="-1" role="dialog" aria-labelledby="join_in_Label" aria-hidden="true" data-backdrop="static">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<h4 class="modal-title" id="join_in_Label">申请成为活动导师</h4>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-sm-12">
+									<small>如果你也想来和老爹一起教给大家如何完成你的制作，欢迎你通过填写下面的表格告诉我们，我们会在10天之内回复你！
+									</small>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-7">
+									<div class="form-group">
+										<input type="text" placeholder="姓名" value="" class="form-control" id="name">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="邮箱" value="" class="form-control" id="mail">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="电话" value="" class="form-control" id="tel">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="个人主页" value="" class="form-control" id="link">
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<label class="checkbox" for="checkbox1">
+										<span class="icons">
+											<span class="first-icon fui-checkbox-unchecked"></span>
+											<span class="second-icon fui-checkbox-checked"></span>
+										</span>
+	  									<input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">电子
+									</label>
+									<label class="checkbox" for="checkbox2">
+										<span class="icons">
+											<span class="first-icon fui-checkbox-unchecked"></span>
+											<span class="second-icon fui-checkbox-checked"></span>
+										</span>
+	  									<input type="checkbox" value="" id="checkbox2" data-toggle="checkbox">机械
+									</label>
+									<label class="checkbox" for="checkbox3">
+										<span class="icons">
+											<span class="first-icon fui-checkbox-unchecked"></span>
+											<span class="second-icon fui-checkbox-checked"></span>
+										</span>
+	  									<input type="checkbox" value="" id="checkbox3" data-toggle="checkbox">装置
+									</label>	
+									<label class="checkbox" for="checkbox4">
+										<span class="icons">
+											<span class="first-icon fui-checkbox-unchecked"></span>
+											<span class="second-icon fui-checkbox-checked"></span>
+										</span>
+	  									<input type="checkbox" value="" id="checkbox4" data-toggle="checkbox">影像
+									</label>
+									<label class="checkbox" for="checkbox5">
+										<span class="icons">
+											<span class="first-icon fui-checkbox-unchecked"></span>
+											<span class="second-icon fui-checkbox-checked"></span>
+										</span>
+	  									<input type="checkbox" value="" id="checkbox5" data-toggle="checkbox">生物
+									</label>
+									<label class="checkbox" for="checkbox6">
+										<span class="icons">
+											<span class="first-icon fui-checkbox-unchecked"></span>
+											<span class="second-icon fui-checkbox-checked"></span>
+										</span>
+	  									<input type="checkbox" value="" id="checkbox6" data-toggle="checkbox">音乐
+									</label>																							
+								</div>
+								<div class="col-sm-3">
+									<label class="checkbox" for="checkbox7">
+										<span class="icons">
+											<span class="first-icon fui-checkbox-unchecked"></span>
+											<span class="second-icon fui-checkbox-checked"></span>
+										</span>
+	  									<input type="checkbox" value="" id="checkbox7" data-toggle="checkbox">飞行器
+									</label>
+									<label class="checkbox" for="checkbox8">
+										<span class="icons">
+											<span class="first-icon fui-checkbox-unchecked"></span>
+											<span class="second-icon fui-checkbox-checked"></span>
+										</span>
+	  									<input type="checkbox" value="" id="checkbox8" data-toggle="checkbox">新媒体
+									</label>
+									<label class="checkbox" for="checkbox9">
+										<span class="icons">
+											<span class="first-icon fui-checkbox-unchecked"></span>
+											<span class="second-icon fui-checkbox-checked"></span>
+										</span>
+	  									<input type="checkbox" value="" id="checkbox9" data-toggle="checkbox">交通
+									</label>	
+									<label class="checkbox" for="checkbox10">
+										<span class="icons">
+											<span class="first-icon fui-checkbox-unchecked"></span>
+											<span class="second-icon fui-checkbox-checked"></span>
+										</span>
+	  									<input type="checkbox" value="" id="checkbox10" data-toggle="checkbox">医疗
+									</label>
+									<label class="checkbox" for="checkbox11">
+										<span class="icons">
+											<span class="first-icon fui-checkbox-unchecked"></span>
+											<span class="second-icon fui-checkbox-checked"></span>
+										</span>
+	  									<input type="checkbox" value="" id="checkbox11" data-toggle="checkbox">可穿戴设备
+									</label>
+									<label class="checkbox" for="checkbox12">
+										<span class="icons">
+											<span class="first-icon fui-checkbox-unchecked"></span>
+											<span class="second-icon fui-checkbox-checked"></span>
+										</span>
+	  									<input type="checkbox" value="" id="checkbox12" data-toggle="checkbox">其他
+									</label>																							
+								</div>
+							</div>
+							<textarea rows="5" class="form-control" placeholder="简单介绍下你制作的内容"></textarea>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+							<button type="button" class="btn btn-primary">提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- join in End-->
+
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../common-files/js/jquery-1.10.2.min.js"></script>
+        <script src="../flat-ui/js/bootstrap.min.js"></script>
+        <script src="../flat-ui/js/flatui-checkbox.js"></script>
+        <script src="../common-files/js/modernizr.custom.js"></script>
+        <script src="../common-files/js/page-transitions.js"></script>
+        <script src="../common-files/js/easing.min.js"></script>
+        <script src="../common-files/js/jquery.svg.js"></script>
+        <script src="../common-files/js/jquery.svganim.js"></script>
+        <script src="../common-files/js/startup-kit.js"></script>
+	</body>
+</html>
